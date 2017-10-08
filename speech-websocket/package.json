@@ -1,0 +1,17 @@
+{
+  "name": "speech-socket",
+  "version": "1.0.0",
+  "description": "socket server demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aof.dev@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^0.10.3",
+    "node-record-lpcm16": "^0.3.0",
+    "socket.io": "^2.0.3",
+    "socket.io-stream": "^0.9.1"
+  }
+}
