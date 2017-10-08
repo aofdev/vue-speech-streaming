@@ -1,18 +1,44 @@
 # vue speech streaming
 
-> A Vue.js project
+> A Vue Performing Streaming Speech Recognition with Google Cloud Speech on Progressive Web App
+![demo speech streaming](https://i.imgur.com/HD07Rj9.gif)
 
-## Setup
+## Setup Project
 
 ``` bash
-# install dependencies
-yarn install
+# Git Clone Project
+git clone git@github.com:aofdev/vue-speech-streaming.git
 
-# serve with hot reload at localhost:8080
-yarn dev
+# Cd project
+cd vue-speech-streaming
 
-# build for production with minification PWA
-yarn build
+# install dependencies project
+npm install || yarn install
+
+```
+
+## Setup websocket
+
+``` bash
+# Cd folder speech-websocket 
+cd speech-websocket
+
+# install dependencies websocket
+npm install
+
+```
+
+## Run Project
+
+``` bash
+# run websocket 
+node app
+
+# run project app
+npm run dev || yarn dev
+
+# build for production with minification and to build Progressive Web Apps
+npm run build || yarn build
 
 ```
 
