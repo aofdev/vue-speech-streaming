@@ -1,6 +1,7 @@
 # vue speech streaming
 
 > A Vue Performing Streaming Speech Recognition with Google Cloud Speech on Progressive Web App
+
 ![demo speech streaming](https://i.imgur.com/HD07Rj9.gif)
 
 ## Setup Project
