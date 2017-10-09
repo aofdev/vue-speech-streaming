@@ -15,7 +15,7 @@
   * If you want to generate a new service account key for an existing service account, click on **Generate new JSON key** and download the JSON key file.
 
 ## Config
-After at Authentication done getting the json file and insert At ``app.js``
+After at Authentication done getting the json file and insert At folder/file ``speech-websocket/app.js``
 ``` bash
 const speech = Speech({
    keyFilename: '' // insert this file json here.
