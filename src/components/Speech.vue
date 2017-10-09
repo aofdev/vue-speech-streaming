@@ -61,7 +61,6 @@
 </template>
 
 <script>
- import axios from 'axios';
   var audioContext = new(window.AudioContext || window.webkitAudioContext)();
   var socket = io.connect('http://localhost:3555');
   var ssStream = ss.createStream();
