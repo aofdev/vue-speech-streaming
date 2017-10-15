@@ -47,7 +47,7 @@ npm install
 
 ```
 
-## Run Project
+## Running Project
 
 ``` bash
 # run websocket 
@@ -60,4 +60,9 @@ npm run dev || yarn dev
 npm run build || yarn build
 
 ```
+
+## Other related projects
+### Synchronous Speech Recognition
+> returns the recognized text for short audio (less than ~1 minute) in the response as soon as it is processed  [vue-pwa-speech](https://github.com/aofdev/vue-pwa-speech) 
+
 
