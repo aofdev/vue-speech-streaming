@@ -610,6 +610,9 @@
         this.btnStop = true;
         scriptNode.connect(audioContext.destination);
         ss(socket).emit('START_SPEECH', ssStream);
+        setInterval(function() {
+          this.stopRecording();
+        }.bind(this), 55000);
       },
       stopRecording() {
         this.btnStop = false;
