@@ -1,5 +1,5 @@
 # vue speech streaming
-
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C9L4PNA5WH3LW)
 > A Vue2 Performing Streaming Speech Recognition with Google Cloud Speech on Progressive Web App
 
 <p align="center">
