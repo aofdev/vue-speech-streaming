@@ -61,7 +61,8 @@
 </template>
 
 <script>
-  var audioContext = new(window.AudioContext || window.webkitAudioContext)();
+
+  var audioContext = null;
   var socket = io.connect('http://localhost:3555');
   var ssStream = ss.createStream();
   var scriptNode;
@@ -551,7 +552,12 @@
       }
     },
     methods: {
+      ensureAudioContext() {
+        // due to https://goo.gl/7K7WLu we don't activate AudioContext until after a user interaction (such as clicking the record button)
+        audioContext = audioContext || new(window.AudioContext || window.webkitAudioContext)();
+      },
       successCallback(stream) {
+        this.ensureAudioContext();
         const vm = this;
         console.log('successCallback:....IN');
         var input = audioContext.createMediaStreamSource(stream);
@@ -603,6 +609,7 @@
         return result.buffer;
       },
       startRecording() {
+        this.ensureAudioContext();
         const languageSelected = this.selected;
         socket.emit('LANGUAGE_SPEECH', languageSelected);
         this.result = true;
@@ -615,6 +622,7 @@
         }.bind(this), 55000);
       },
       stopRecording() {
+        this.ensureAudioContext();
         this.btnStop = false;
         this.btn = true;
         scriptNode.disconnect(audioContext.destination);
